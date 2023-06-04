@@ -1,0 +1,111 @@
+#forma{
+    table-layout: fixed;
+	border-radius:10px;
+	border-collapse:collapse;
+	text-align:center;
+	border-color:black;
+}
+td{
+	background-color: white;
+	transition: background-color 0.2s linear;
+}
+td:hover{	
+	background-color: #DCDCDC;
+	cursor:pointer;
+}
+#scrin:hover{
+	background:white;
+	cursor:default;
+}
+#read{
+	height:100%;
+	width:100%;
+}
+input{
+	cursor:default;
+}
+
+.conteiner{
+	margin-top:-480px;
+	margin-right:10px;
+	margin-left:1000px;
+}
+.window{
+	height:60px;
+	width:100%;
+	border:none;
+	font-size:30px;
+	outline:none;
+	text-align:right;
+	border-radius:20px;
+}
+.scrin{
+	grid-column:1/-1;
+	padding:0;
+}
+.clean{
+	grid-column:1/3;
+	background-color:#008B8B;
+	transition:background-color 0.4s;
+}
+.back{
+	background-color:#808080;
+	grid-column:3/5;
+	transition:background-color 0.4s;
+}
+.ravno{	
+	background:#FFFF00;
+	grid-column:3/-1;
+	transition:background-color 0.4s;
+}
+.zero{
+	grid-column:1/3;
+}
+.zn{
+	color:black;
+	padding:20px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:22px;
+	cursor:pointer;
+	font-weight:bold;
+	border-radius:20px;
+	transition:background-color 0.4s;
+}
+.zn:not(.back, .clean, .ravno, .znack){
+	background-color:#7FFFD4;
+}
+.conteiner{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-gap:3px;
+	background-color:black;
+	padding:4px;
+	border-radius:17px;
+	max-width:300px;
+	font-family:"tahoma";
+}
+.znack{
+	background-color:#FF0000;
+	transition:background-color 0.4s;
+}
+.znack:hover{
+	background-color:#B22222;
+}
+body{
+	background-color:#b5fd8d;
+	user-select:none;
+}
+.zn2:hover{
+	background-color:#40E0D0;
+}
+.back:hover{
+	background-color:#696969;
+}
+.clean:hover{
+	background-color:#008080;
+}
+.ravno:hover{
+	background-color:#FFD700;
+}

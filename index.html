@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<title>calc</title>
+</head>
+<body>
+<table id='forma'height='480px' border='1px' width='400px'>
+
+<tr height="60px">
+<td id='scrin' colspan='4'><input type='text' readonly id='read'></td>
+</tr>
+
+<tr height="60px">
+<td colspan='1' onclick="clean()"><h2>C</h2></td>
+<td colspan='1' onclick="back()"><h2>←</h2></td>
+<td colspan='2' onclick="ravno()"><h2>=</h2></td>
+</tr>
+
+<tr height="60px">
+<td onclick="insert('+')"><h2>+</h2></td>
+<td onclick="insert('-')"><h2>-</h2></td>
+<td onclick="insert('*')"><h2>*</h2></td>
+<td onclick="insert('/')"><h2>/</h2></td>
+</tr>
+
+<tr height="60px">
+<td onclick="insert('7')"><h2>7</h2></td>
+<td onclick="insert('8')"><h2>8</h2></td>
+<td onclick="insert('9')"><h2>9</h2></td>
+<td onclick="insert('.')"><h2>.</h2></td>
+</tr>
+
+<tr height="60px">
+<td onclick="insert('4')"><h2>4</h2></td>
+<td onclick="insert('5')"><h2>5</h2></td>
+<td onclick="insert('6')"><h2>6</h2></td>
+<td rowspan='2' onclick="insert('0')"><h2>0</h2></td>
+</tr>
+
+<tr height="60px">
+<td onclick="insert('1')"><h2>1</h2></td>
+<td onclick="insert('2')"><h2>2</h2></td>
+<td onclick="insert('3')"><h2>3</h2></td>
+</tr>
+
+</table>
+<div class="conteiner">
+	<div class="scrin"><input type='text' class='window' id="input" readonly></div>
+	   <div class='zn clean' onclick="clean2()">C</div>
+	   <div class='zn back' onclick="back2()">←</div>
+	   <div class='zn znack' onclick="insert2('+')" >+</div>
+	   <div class='zn znack' onclick="insert2('-')">-</div>
+	   <div class='zn znack' onclick="insert2('*')">*</div>
+	   <div class='zn znack' onclick="insert2('/')">/</div>
+	   <div class='zn zn2' onclick="insert2('7')">7</div>
+	   <div class='zn zn2' onclick="insert2('8')">8</div>
+	   <div class='zn zn2' onclick="insert2('9')">9</div>
+	   <div class='zn zn2' onclick="insert2('.')">.</div>
+	   <div class='zn zn2' onclick="insert2('4')">4</div>
+	   <div class='zn zn2' onclick="insert2('5')">5</div>
+	   <div class='zn zn2' onclick="insert2('6')">6</div>
+	   <div class='zn zn2' onclick="insert3()">(</div>
+	   <div class='zn zn2' onclick="insert2('1')">1</div>
+	   <div class='zn zn2' onclick="insert2('2')">2</div>
+	   <div class='zn zn2' onclick="insert2('3')">3</div>
+	   <div class='zn zn2' onclick="insert4()">)</div>
+	   <div class='zn zero zn2' onclick="insert2('0')">0</div>
+	   <div class='zn ravno' onclick="ravno2()">=</div>
+</div>
+<script src='script.js'></script>
+</body>
+</html>
